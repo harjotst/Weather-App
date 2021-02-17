@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: #333;
+  font-family: Arial;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  padding-bottom: 0;
+}
+
+header {
+  flex: 0 1 auto;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header a { 
+  color: #888;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+header a:first-of-type {
+  padding-left: 0;
+}
+
+main {
+  flex: 1 1 auto;
+  padding: 20px 0;
+}
+
+main h2 {
+  margin: 0.5rem 0;
+}
+
+label {
+  margin: 0.5rem 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.portrait {
+  width: 250px;
+}
+
+footer {
+  color: #888;
+  flex: 0 1 auto;
+  padding: 40px 0;
+  border-top: 1px solid #888;
+}
