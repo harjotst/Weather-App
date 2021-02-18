@@ -6,7 +6,7 @@ const weather = document.querySelector('#weather-info');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   
-  fetch(`http://localhost:3000/weather?address=${encodeURIComponent(input.value)}`)
+  fetch(`/weather?address=${encodeURIComponent(input.value)}`)
   .then((response) => {
     return response.json();
   }).then((response) => {

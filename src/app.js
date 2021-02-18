@@ -6,6 +6,7 @@ const geocode = require('./utils/geocode.js');
 const weather = require('./utils/weather.js');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // paths
 const publicPath = path.join(__dirname, '../public');
@@ -75,6 +76,6 @@ app.get('*', (req, res) => {
   res.send('Page not found');
 });
 
-app.listen('3000', () => {
+app.listen(port, () => {
 
 });
